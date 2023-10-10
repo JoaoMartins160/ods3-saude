@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+li,
+a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  text-shadow: 1px 1px 0 rgb(0, 0, 0);
+}
+
+header {
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5%;
+  background-color: #ff8282;
+}
+
+.logo {
+  cursor: pointer;
+  font-family: "Young Serif", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 rgb(0, 0, 0);
+  letter-spacing: 3px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  display: inline-block;
+  padding: 0 16px;
+}
+
+.menu li a {
+  transition: all 0.3s ease 0s;
+}
+
+.menu li a:hover {
+  transition: all 0.5s ease 0s;
+  color: rgb(0, 0, 0);
+}
+
+main {
+  font-size: 40px;
+}
+
+footer {
+  margin: 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 12px;
+  background-color: #ff8282;
+}
+
+.menu_footer {
+  list-style: none;
+}
+
+.logo_end {
+  font-size: 16px;
+  color: #000;
+  margin-top: 16px;
+
+}
