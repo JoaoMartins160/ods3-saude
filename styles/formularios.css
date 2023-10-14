@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+body .submit-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+}
+
+.title{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(25, 164, 17);
+    border-radius: 50% 50% 0% 0%;
+}
+
+.title h1{
+    color: white;
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.submit-button button{
+    width: 35%;
+    border: none;
+    background-color: rgb(3, 79, 3);
+    padding: 9px 15px;
+    border-radius: 5px;
+}
+
+.submit-button button a{
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+
+.cadastro{
+    border: 2px solid green;
+}
+
+.cadastro label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro input{
+    border-radius: 5px;
+    border-color: gray;
+    padding: 10px;
+}
+
+.dados{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-box input{
+    width: 49.6%;
+}
+
+.name-box input{
+    width: 100%;
+}
+
+.value-box input{
+    width: 100%;
+}
+
+.barra-inferior{
+    display: flex;
+    font-size: large;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    background-color: rgb(25, 164, 17);
+    border-radius: 0% 0% 50% 50%;
+    width: 100%;
+}
