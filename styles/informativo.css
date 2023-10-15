@@ -41,9 +41,8 @@ a,
 button {
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-  color: #ffffff;
+  color: #000;
   font-size: 18px;
-  text-shadow: 1px 1px 0 rgb(0, 0, 0);
 }
 
 .header_bot {
@@ -53,7 +52,6 @@ button {
   justify-content: space-between;
   align-items: center;
   padding: 12px 5%;
-  background-color: #ff8282;
 }
 
 .logo {
@@ -61,14 +59,13 @@ button {
   font-family: "Young Serif", sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: #ffffff;
-  text-shadow: 2px 2px 0 rgb(0, 0, 0);
+  color: #000;
   letter-spacing: 3px;
 }
 
 button {
   padding: 5px 12px;
-  background-color: #930e0e;
+  background-color: #002C26;
   color: #fff;
   border: 2px 2px 1px solid fff;
   cursor: pointer;
@@ -90,7 +87,7 @@ button {
 
 .menu li a:hover {
   transition: all 0.5s ease 0s;
-  color: rgb(0, 0, 0);
+  color: #002C26;
   text-decoration: underline;
 }
 
@@ -106,11 +103,12 @@ footer {
   justify-content: left;
   align-items: center;
   padding: 12px;
-  background-color: #ff8282;
+  background-color: #002C26;
 }
 
-.menu_footer {
+.menu_footer li {
   list-style: none;
+  color: #fff;
 }
 
 .logo_end {
@@ -162,17 +160,19 @@ footer {
 }
 
 .container_right {
-  width: 50%;
-  float: right;
-  height: 500px;
-  margin: 50px 50px;
+  display: grid;
+  grid-template-columns: 35vh 35vh;
+  height: 60vh;
+  gap: 2vh;
+}
+
+.container_right img{
+  display: grid;
+  height: 100%;
+  width: 100%;
 }
 
 .container_right .square {
-  display: inline-block;
-  justify-content: space-evenly;
-  width: 250px;
-  height: 250px;
   border: 1px solid black;
 }
 

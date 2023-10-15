@@ -9,6 +9,18 @@
 </head>
 
 <body>
+
+    <div class="header_bot">
+        <div class="logo">Health Care</div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    
     <form>
         <div class="title">
             <h1>Nos envie uma mensagem</h1>
@@ -41,27 +53,30 @@
                 <input type="text" id="contact" contato="whatsapp" placeholder="WhatsApp">
                 <input type="text" id="contact" contato="ligacao" placeholder="Ligação"><br>
             </div><br>
-    
+
             <div class="service-box"> <!--Serviços-->
-                <label for="service">Qual serviço de saúde e bem-estar normalmente falta em seu cotidiano ?</label>
-                <input type="text" id="service" servico="higiene" placeholder="Higiene Básica">
-                <input type="text" id="service" servico="alimentacao" placeholder="Alimentação">
-                <input type="text" id="service" servico="saude_psicologica" placeholder="Saúde Psicológica"><br>
-                
-                <!--<input type="radio" id="higiene" name="service">
-                <label for="higiene">Higiene</label>
-                <input type="radio" id="alimentacao" name="service">
-                <label for="alimentacao">Alimentação</label>
-                <input type="radio" id="saude_psicologica" name="service">
-                <label for="saude_psicologica">Saúde Psicológica</label>-->
+                <label for="service">Qual serviço de saúde e bem-estar normalmente falta em seu cotidiano ?</label><br>
+                <div class="service-hig">
+                    <input type="radio" id="higiene" name="service">
+                    <label for="higiene">Higiene</label>
+                </div>
+                <div class="service-aliment">
+                    <input type="radio" id="alimentacao" name="service">
+                    <label for="alimentacao">Alimentação</label>
+                </div>
+                <div class="service-saude">
+                    <input type="radio" id="saude_psicologica" name="service">  
+                    <label for="saude_psicologica">Saúde Psicológica</label> 
+                </div>
             </div><br>
-    
+
             <div class="value-box"> <!--Valor da parcela-->
                 <label for="value">Qual o bem ou valor da parcela ideal para você ?</label>
                 <input type="text" id="value" valor="valor_parcela" placeholder="Digite sua resposta" required><br>
             </div><br>
+
             <div class="submit-button">
-                <button><a href="#">Enviar</a></button>
+                <button><a href="../index.html">Enviar</a></button>
             </div>
         </div>
         <div class="barra-inferior">
