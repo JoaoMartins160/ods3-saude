@@ -2,6 +2,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 
+/* Estilos para dispositivos móveis */
+
+
+/* Estilos para tablets */
+@media screen and (min-width: 800px) and (max-width: 1190px) {
+  
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+ 
+}
+
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -161,9 +174,10 @@ footer {
 
 .container_right {
   display: grid;
-  grid-template-columns: 35vh 35vh;
+  grid-template-columns: 30vh 30vh;
   height: 60vh;
   gap: 2vh;
+  margin: 50px;
 }
 
 .container_right img{
@@ -182,4 +196,123 @@ footer {
  display: flex;
  flex-direction: column;
 
+}
+
+@media screen and (min-width:459px) and (max-width: 799px) {
+  
+  .info{
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    justify-content: center;
+    gap: 10px;
+  }
+  .info p{
+    position: relative;
+    margin: 0;
+  }
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container_left{
+    height: 9em;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .container_left p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .container_left div {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .container_left h2{
+    margin: 0;
+  }
+
+  .container_left a{
+    margin-top: 10px;
+  }
+
+  .container_right{
+    grid-template-columns: 25vmax 25vmax;
+    height: 50vmax;
+  }
+ 
+}
+
+@media screen and (max-width: 458px) {
+  
+  .info{
+    display: flex;
+    flex-direction: column;
+    height: 5em;
+    justify-content: center;
+    gap: 10px;
+  }
+  .info p{
+    position: relative;
+    margin: 0;
+  }
+
+  .header_bot{
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  .logo{
+    font-size: 20px;
+  }
+
+  .menu{
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container_left{
+    height: 9em;
+    gap: 12px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .container_left p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .container_left div {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .container_left h2{
+    margin: 0;
+  }
+
+  .container_left a{
+    margin-top: 10px;
+  }
+
+  .container_right{
+    grid-template-columns: 20vmax 20vmax;
+    height: 40vmax;
+  }
+ 
 }

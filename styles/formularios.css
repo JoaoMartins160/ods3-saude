@@ -167,3 +167,50 @@ body .submit-button{
     color: rgb(0, 0, 0);
     text-decoration: underline;
   }
+
+  @media screen and (min-width:459px) and (max-width: 799px) {
+  
+    .info{
+      display: flex;
+      flex-direction: column;
+      height: 5em;
+      justify-content: center;
+      gap: 10px;
+    }
+    .info p{
+      position: relative;
+      margin: 0;
+    }
+}
+  
+  @media screen and (max-width: 458px) {
+    
+    .info{
+      display: flex;
+      flex-direction: column;
+      height: 5em;
+      justify-content: center;
+      gap: 10px;
+    }
+    .info p{
+      position: relative;
+      margin: 0;
+    }
+  
+    .header_bot{
+      padding: 0;
+      justify-content: space-between;
+    }
+  
+    .logo{
+      font-size: 20px;
+    }
+  
+    .menu{
+      display: flex;
+      padding: 0;
+      flex-direction: column;
+    }
+  
+   
+  }
