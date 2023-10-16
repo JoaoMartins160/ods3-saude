@@ -67,6 +67,18 @@ button {
   padding: 12px 5%;
 }
 
+.header_bot button{
+  border: 2px 2px 1px solid fff;
+  background-color: #002C26;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header_bot button a{
+  padding: 5px 12px;
+  color: #fff;
+}
+
 .logo {
   cursor: pointer;
   font-family: "Young Serif", sans-serif;
@@ -74,15 +86,6 @@ button {
   font-weight: 700;
   color: #000;
   letter-spacing: 3px;
-}
-
-button {
-  padding: 5px 12px;
-  background-color: #002C26;
-  color: #fff;
-  border: 2px 2px 1px solid fff;
-  cursor: pointer;
-  border-radius: 10px;
 }
 
 .menu {
@@ -157,6 +160,18 @@ footer {
   font-size: 24px;
   font-family: "Poppins";
   text-align: center;
+}
+
+.container_left button a{
+  padding: 5px 12px;
+  color: #fff;
+}
+
+.container_left button{
+  border: 2px 2px 1px solid fff;
+  background-color: #002C26;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .container_left p {
