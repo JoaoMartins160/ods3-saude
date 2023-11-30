@@ -22,3 +22,20 @@ function addMensage() {
 
   localStorage.setItem("dataList", JSON.stringify(dataList));
 }
+
+function deleteItens(dataList){
+  dataList.splice(0,1);
+  localStorage.removeItem(dataList.key);
+}
+
+function deleteInfo(){
+  var elements = document.querySelectorAll("input");
+  for(const formElemens of elements){
+    elements.value = '';
+  }
+}
+
+function deleteAll(dataList){
+  dataList.splice(0, dataList.length);
+  localStorage.clear();
+}
