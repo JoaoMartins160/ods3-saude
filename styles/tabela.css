@@ -1,14 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
 
 /* Estilos para dispositivos móveis */
-
 
 /* Estilos para tablets */
 
 @media screen and (min-width: 800px) and (max-width: 1190px) {
-
   .container {
     flex-direction: column;
     align-items: center;
@@ -19,7 +17,6 @@
     flex-direction: column;
     align-items: center;
   }
-
 }
 
 html {
@@ -76,7 +73,7 @@ button {
 
 .header_bot button {
   border: 2px 2px 1px solid fff;
-  background-color: #002C26;
+  background-color: #002c26;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -110,7 +107,7 @@ button {
 
 .menu li a:hover {
   transition: all 0.5s ease 0s;
-  color: #002C26;
+  color: #002c26;
   text-decoration: underline;
 }
 
@@ -130,8 +127,29 @@ caption {
   font-size: 30px;
   padding: 20px 0;
 }
+caption button {
+  border-radius: 16px;
+  border: 2px solid rgb(231, 50, 50);
+  caption-side: bottom;
+  margin: 0px 0px 0px 50px;
+}
 
-.tabela,
+caption button:hover {
+  background-color: rgb(133, 0, 0);
+  box-shadow: 0 0 4px #111;
+}
+caption input {
+  margin: 0px 50px 0px 0px;
+  background-image: url("../img/searchicon.png");
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#tabela,
 th,
 td,
 tr {
@@ -144,13 +162,44 @@ tr {
   text-align: center;
   padding: 8px;
 }
+.buttondel {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  border: 2px solid rgb(231, 50, 50);
+  background-color: #fff;
+  cursor: pointer;
+  box-shadow: 0 0 10px #333;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.buttondel:hover {
+  background-color: rgb(245, 207, 207);
+  transform: scale(1.2);
+  box-shadow: 0 0 4px #111;
+  transition: 0.3s;
+}
+svg {
+  color: rgb(231, 50, 50);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+.buttondel:focus svg {
+  opacity: 0;
+  transition: 0.3s;
+}
 
 th {
   background-color: rgb(0, 49, 5);
   color: #fff;
   font-weight: 100;
 }
-
 
 footer {
   margin: 0;
@@ -160,7 +209,7 @@ footer {
   justify-content: left;
   align-items: center;
   padding: 12px;
-  background-color: #002C26;
+  background-color: #002c26;
   bottom: 0;
 }
 
@@ -181,7 +230,7 @@ footer {
   background-color: red;
   width: auto;
   min-width: 100%;
-  min-height: 100%
+  min-height: 100%;
 }
 
 .container {
@@ -211,7 +260,7 @@ footer {
 
 .container_left button {
   border: 2px 2px 1px solid fff;
-  background-color: #002C26;
+  background-color: #002c26;
   border-radius: 10px;
   cursor: pointer;
 }
@@ -247,15 +296,12 @@ footer {
   border: 1px solid black;
 }
 
-
 .container_left a {
-
   display: flex;
   flex-direction: column;
-
 }
 
-@media screen and (min-width:800px) and (max-width: 1000px) {
+@media screen and (min-width: 800px) and (max-width: 1000px) {
   .logo {
     cursor: pointer;
     font-family: "Young Serif", sans-serif;
@@ -265,14 +311,14 @@ footer {
     letter-spacing: 3px;
   }
 
-  .caption {
+  caption {
     /* display: flex; */
     font-family: "Poppins", sans-serif;
     font-size: 26px;
     padding: 20px 0;
   }
 
-  .tabela,
+  #tabela,
   th,
   td,
   tr {
@@ -284,6 +330,38 @@ footer {
     width: 800px;
     text-align: center;
     padding: 6px;
+  }
+  .buttondel {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid rgb(231, 50, 50);
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .buttondel:hover {
+    background-color: rgb(245, 207, 207);
+    transform: scale(1.2);
+    box-shadow: 0 0 4px #111;
+    transition: 0.3s;
+  }
+  svg {
+    color: rgb(231, 50, 50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  .buttondel:focus svg {
+    opacity: 0;
+    transition: 0.3s;
   }
 
   .container-tabela {
@@ -311,8 +389,7 @@ footer {
   }
 }
 
-@media screen and (min-width:459px) and (max-width: 799px) {
-
+@media screen and (min-width: 459px) and (max-width: 799px) {
   .logo {
     cursor: pointer;
     font-family: "Young Serif", sans-serif;
@@ -322,14 +399,14 @@ footer {
     letter-spacing: 2px;
   }
 
-  .caption {
+  caption {
     /* display: flex; */
     font-family: "Poppins", sans-serif;
     font-size: 20px;
     padding: 16px 0;
   }
 
-  .tabela,
+  #tabela,
   th,
   td,
   tr {
@@ -341,6 +418,39 @@ footer {
     width: 500px;
     text-align: center;
     padding: 5px;
+  }
+
+  .buttondel {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    border: 2px solid rgb(231, 50, 50);
+    background-color: #fff;
+    cursor: pointer;
+    box-shadow: 0 0 10px #333;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .buttondel:hover {
+    background-color: rgb(245, 207, 207);
+    transform: scale(1.2);
+    box-shadow: 0 0 4px #111;
+    transition: 0.3s;
+  }
+  svg {
+    color: rgb(231, 50, 50);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+
+  .buttondel:focus svg {
+    opacity: 0;
+    transition: 0.3s;
   }
 
   .container-tabela {
@@ -495,5 +605,4 @@ footer {
     align-items: center;
     padding: 1px 5%;
   }
-
 }

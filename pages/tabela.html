@@ -31,28 +31,26 @@
 
     <main>
       <div class="container-tabela">
-        <table class="tabela">
+        <table id="tabela">
           <caption>
+            <input id="searchinput" type="text" placeholder="pesquise" />
             Informações Cadastradas
+            <button onclick="deleteAll()">Limpar Tabela</button>
           </caption>
-          <tr>
-            <th>Nome</th>
-            <th>CPF</th>
-            <th>Telefone</th>
-            <th>Caixa de Serviço</th>
-            <th>Data de Envio</th>
-            <th>-</th>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>x</td>
-          </tr>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Telefone</th>
+              <th>Caixa de Serviço</th>
+              <th>Data de Envio</th>
+              <th>Funções</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
         </table>
       </div>
     </main>
+    <script src="../script/index.js"></script>
   </body>
 </html>
