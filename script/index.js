@@ -39,12 +39,15 @@ function deleteAll() {
   displayData();
 }
 
-function displayData() {
+function displayData(filteredData = null) {
   const dataTable = document.getElementById("tabela");
   const tbody = dataTable.querySelector("tbody");
+
   tbody.innerHTML = "";
 
-  dataList.forEach((data) => {
+  const dataToDisplay = filteredData || dataList;
+
+  dataToDisplay.forEach((data) => {
     const row = document.createElement("tr");
     row.innerHTML = `
       <td>${data.nome}</td>
@@ -60,11 +63,17 @@ function displayData() {
   });
 }
 
-function searchByName(name) {
+function searchByName() {
+  const searchInput = document.getElementById("searchinput");
+  const searchTerm = searchInput.value.toLowerCase();
+
   const filteredData = dataList.filter((data) =>
-    data.nome.toLowerCase().includes(name.toLowerCase())
+    data.nome.toLowerCase().includes(searchTerm)
   );
+
   displayData(filteredData);
 }
+
+document.getElementById("searchinput").addEventListener("input", searchByName);
 
 displayData();
